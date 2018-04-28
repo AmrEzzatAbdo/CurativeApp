@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amrezzat.myapplication.WelcomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/chickConnection"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#f4be59">
+
+        <TextView
+            android:id="@+id/Clable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="No netork Connection" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/Clable" />
+        <TextView
+            android:id="@+id/retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retry"
+            android:layout_alignParentRight="true"
+            android:textColor="#7b2a2a"
+            android:paddingRight="5dp"
+            android:onClick="retryT"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/retry"
+            android:onClick="retryI"
+            android:src="@android:drawable/stat_notify_sync_noanim"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:src="@drawable/logo"
+        />
+</RelativeLayout>

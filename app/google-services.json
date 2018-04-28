@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "493607069667",
+    "firebase_url": "https://curati-93940.firebaseio.com",
+    "project_id": "curati-93940",
+    "storage_bucket": "curati-93940.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493607069667:android:9aab49f0f93cabc8",
+        "android_client_info": {
+          "package_name": "com.example.amrezzat.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493607069667-0bfdld90enb7n3hqbh8f47j7ml8l4jk4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.amrezzat.myapplication",
+            "certificate_hash": "99d24cf09c3dd81b1e03724bb76c383d31afaf91"
+          }
+        },
+        {
+          "client_id": "493607069667-nh4m0kf0acbpa3chkro08pa758tlvogb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhzoYRrQ0TOota3_sHNzLj2JhJAnKiCnM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493607069667-nh4m0kf0acbpa3chkro08pa758tlvogb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

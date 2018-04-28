@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context="com.example.amrezzat.myapplication.AddCurative">
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/photoicon"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:textColor="#fdfdfd"
+            android:backgroundTint="#0091b3"
+            android:hint="اسم الدواء.."
+            />
+        <EditText
+            android:id="@+id/curativeSideEffect"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/name"
+            android:minLines="3"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="#0091b3"
+            android:textColor="#fdfdfd"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:digits="ا أ ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن هـ و ي اأبتثجحخدذرزسشصضطظعغفقكلمنهـوي"
+            android:hint="اعراضه الجانبيه....."/>
+        <EditText
+            android:id="@+id/curativeInformation"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_below="@id/curativeSideEffect"
+            android:gravity="top|right"
+            android:backgroundTint="#0091b3"
+            android:layout_marginTop="2dp"
+            android:minLines="3"
+            android:textColor="#fdfdfd"
+            android:inputType="text"
+            android:digits="ا أ ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن هـ و ي اأبتثجحخدذرزسشصضطظعغفقكلمنهـوي"
+            android:layout_marginLeft="20dp"
+            android:hint="معلومات عن طريقة الاستعمال...."/>
+        <EditText
+            android:id="@+id/curativeReason"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:gravity="top|right"
+            android:minLines="3"
+            android:backgroundTint="#0091b3"
+            android:layout_below="@id/curativeInformation"
+            android:textColor="#fdfdfd"
+            android:inputType="text"
+            android:digits="ا أ ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن هـ و ي اأبتثجحخدذرزسشصضطظعغفقكلمنهـوي"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp"
+            android:hint="الامراض المعالج لها..."/>
+    <Button
+        android:layout_below="@id/curativeReason"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="اضافه"
+        android:background="#0091b3"
+        android:textColor="#fdfdfd"
+        android:onClick="addAction"
+        android:layout_margin="50dp"/>
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

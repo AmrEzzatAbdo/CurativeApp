@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#eaeae5"
+        android:layout_margin="10dp"
+        android:scaleX="0.99"
+        android:scaleY="0.99"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/curativeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#c94848"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:hint="اسم الدواء"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lableCNAME"
+            android:layout_marginLeft="12dp"
+            android:textSize="13dp"
+            android:layout_below="@id/curativeName"
+            android:textColor="#8e6742"
+            android:text="معلومات عن العلاج:\n"
+            />
+        <TextView
+            android:id="@+id/curativeInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lableCNAME"
+            android:hint="معلوماتعن طريقة الاستخدام"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lableSide"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:textSize="13dp"
+            android:layout_below="@id/curativeInformation"
+            android:textColor="#8e6742"
+            android:text="الاعراض الجانبيه:\n"
+            />
+    <TextView
+        android:id="@+id/curativeSideEffect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lableSide"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:hint="اعراضه الجانبيه"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lableReason"
+            android:layout_marginLeft="12dp"
+            android:textSize="13dp"
+            android:layout_below="@id/curativeSideEffect"
+            android:textColor="#8e6742"
+            android:text="موانع الاستعمال:\n"
+            />
+
+    <TextView
+        android:id="@+id/curativeReason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lableReason"
+        android:layout_marginTop="2dp"
+        android:textColor="#000"
+        android:layout_marginRight="10dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:hint="الامراض التى يعالجها"
+        android:layout_marginBottom="5dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/photoicon"
+            android:layout_below="@id/curativeReason"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>
